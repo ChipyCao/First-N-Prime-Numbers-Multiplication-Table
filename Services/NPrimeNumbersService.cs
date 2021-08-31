@@ -8,8 +8,10 @@ namespace NPrimeNumbersMultiplicationTable.Services
         public NPrimeNumbersService()
         {
         }
-        public IEnumerable<long> GetFirstNPrimeNumbers(long n)
 
+        // Recieves an 'n' parameter
+        // Returns a list of the first 'n' prime numbers.
+        public IEnumerable<long> GetFirstNPrimeNumbers(long n)
         {
             var items = new List<long>();
             if (n <= 0)
@@ -34,18 +36,21 @@ namespace NPrimeNumbersMultiplicationTable.Services
             return result;
         }
 
-        public List<long> getRemainingPrimeNumbers(long countLeft, List<long> items)
+        // Recieves a number 'm' and a list ordered of prime numbers
+        // Returns the modified list, now including the next 'm' aditional prime numbers
+        public List<long> getRemainingPrimeNumbers(long m, List<long> items)
         {
-
-            if (countLeft == 0)
+            if (m == 0)
                 return items;
 
             var nextPrimeNumber = FindNextPrimeNumber(items.LastOrDefault());
             items.Add(nextPrimeNumber);
 
-            return getRemainingPrimeNumbers(countLeft - 1, items);
+            return getRemainingPrimeNumbers(m - 1, items);
         }
 
+        // Recieves a number
+        // Returns the next prime number after it
         public long FindNextPrimeNumber(long number)
         {
             number++;
@@ -56,6 +61,8 @@ namespace NPrimeNumbersMultiplicationTable.Services
             return number;
         }
 
+        // Recieves a number
+        // Returns true if the number is prime, and false if its not
         public bool CheckPrimeNumber(long number)
         {
             for (long i = 2; i < number / 2; i++)
