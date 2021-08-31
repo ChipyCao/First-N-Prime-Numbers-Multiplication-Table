@@ -13,7 +13,7 @@
           Minimum allowed value is 1.
         </div>
         <div *ngIf="myForm.controls['myNum'].hasError('max')">
-          Maximum allowed value is 500. (computing would take waaay too much time)
+          Maximum allowed value is 500.
         </div>
         <div *ngIf="myForm.controls['myNum'].errors?.pattern">
           Number format not accepted.

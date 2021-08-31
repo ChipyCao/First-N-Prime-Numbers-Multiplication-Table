@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f4ac28a-359f-4cea-b956-7f98e5bc6a90" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClientApp/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/app/home/home.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,21 +39,37 @@
       <updated>1630003652326</updated>
       <workItem from="1630003653399" duration="65000" />
       <workItem from="1630003731235" duration="4000" />
-      <workItem from="1630431293733" duration="4154000" />
+      <workItem from="1630431293733" duration="4554000" />
     </task>
+    <task id="LOCAL-00001" summary="1.Added &quot;Generate Table&quot; button.&#10;2.Added  on-enter effect to the &quot;N&quot; input field">
+      <created>1630438941496</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1630438941496</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1.Added &quot;Generate Table&quot; button.&#10;2.Added  on-enter effect to the &quot;N&quot; input field" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.Added &quot;Generate Table&quot; button.&#10;2.Added  on-enter effect to the &quot;N&quot; input field" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="572" y="93" key="CommitChangelistDialog2" timestamp="1630432859929">
+    <state x="572" y="93" key="CommitChangelistDialog2" timestamp="1630438940185">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="572" y="93" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1630432859929" />
-    <state x="192" y="87" key="DiffContextDialog" timestamp="1630432858375">
+    <state x="572" y="93" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1630438940185" />
+    <state x="192" y="87" key="DiffContextDialog" timestamp="1630438899557">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="192" y="87" key="DiffContextDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1630432858375" />
+    <state x="192" y="87" key="DiffContextDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1630438899557" />
+    <state x="560" y="258" key="Vcs.Push.Dialog.v2" timestamp="1630438952146">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="560" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1630438952146" />
   </component>
 </project>
