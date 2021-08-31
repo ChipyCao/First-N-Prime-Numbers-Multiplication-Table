@@ -7,18 +7,21 @@
     <p class="text-center font-weight-bold">Please chose a value for N:</p>
     <div class="justify-content-center align-items-center row mb-3">
       <form [formGroup]="myForm">
-        <input type="number" min="0" class="form-control form-input" id="myNum" formControlName="myNum" (ngModelChange)="nChanged()"
+        <input type="number" min="0" class="form-control form-input" id="myNum" formControlName="myNum" (keyup.enter)="nChanged()"
                [class.error]="isInvalidControl(myForm.controls['myNum'])">
         <div *ngIf="myForm.controls['myNum'].hasError('min')">
-          Minimum possible input is 1.
+          Minimum allowed value is 1.
         </div>
         <div *ngIf="myForm.controls['myNum'].hasError('max')">
-          Maximum possible output is 500.
+          Maximum allowed value is 500. (computing would take waaay too much time)
         </div>
         <div *ngIf="myForm.controls['myNum'].errors?.pattern">
           Number format not accepted.
         </div>
       </form>
+    </div>
+    <div class="justify-content-center align-items-center row">
+      <button type="button" class="btn btn-primary mt-1 mb-2" (click)="nChanged()">Generate Table</button>
     </div>
     <app-fetch-data [nValue]="n"></app-fetch-data>
   </div>
