@@ -1,0 +1,13 @@
+<div class="container bg-dark text-white w-100 mt-5 pt-4 pr-4 pl-4" >
+  <div class="mt-lg-5 mb-lg-5">
+    <h1 class="text-center mb-3">First N Prime Numbers Multiplication Table</h1>
+    <h3 class="text-center mb-3">- Aninoiu Ciprian -</h3>
+  </div>
+  <div class="mt-2 mb-3">
+    <p class="text-center font-weight-bold">Please chose a value for N:</p>
+    <div class="justify-content-center align-items-center row mb-3">
+      <input style="width: 250px; height: 35px" type="number" [(ngModel)]="n">
+    </div>
+    <app-fetch-data [nValue]="n"></app-fetch-data>
+  </div>
+</div>

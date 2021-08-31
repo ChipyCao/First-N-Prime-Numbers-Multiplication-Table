@@ -1,0 +1,39 @@
+<div class="overlay" *ngIf="isLoading">
+  <div class="overlay__wrapper">
+    <div class="overlay__spinner">
+      <div class="d-flex justify-content-center">
+        <div class="spinner-grow text-danger" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-warning" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-info" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="text-center mt-3 pb-5" *ngIf="firstNPrimes?.length == 0">{{"(No Data to display)"}}</div>
+<div class="table-responsive mt-3 pl-3 pr-3 mb-3" style="height: 100%; max-height: 650px; background-color: #ffffff;
+  overflow: auto;
+  display:inline-block;" *ngIf="firstNPrimes?.length > 0">
+  <table class="table table-striped table-bordered table-sm">
+    <thead>
+      <tr>
+        <th scope="col" style=" position: sticky; top: 0" *ngFor="let col of [].constructor(matrix.length); let i = index">
+          {{matrix[0][i]}}
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of [].constructor(matrix.length) | slice:1; let j = index">
+        <th scope="row">{{matrix[j+1][0]}}</th>
+        <td scope="col" *ngFor="let col of [].constructor(matrix.length) | slice:1; let i = index">
+          {{matrix[j+1][i+1]}}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
