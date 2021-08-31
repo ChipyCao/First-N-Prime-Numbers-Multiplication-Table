@@ -13,6 +13,7 @@ export class FetchDataComponent {
   public baseUrl: string;
   public isLoading = true;
   @Input('nValue') set nValue(n: number) {
+    if ( n !== null && n !== undefined)
       this.doGetData(n);
   }
 
